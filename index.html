@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
 </head>
 <body>
     <div class="main--left">
@@ -21,46 +22,51 @@
         <div class="main--right--top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.<br><br>You know you want to.
         </div>
 
-        <div class="main--right--middle">Lets do this!<br><br>
+        <div class="main--right--middle">
+            <div class="main--right-middle-text">Lets do this!<br><br></div>
             <form action="file:///home/piter/repos/signup/index.html" method="post">
 
                 <div id="forms" class="firstlast">
                     <div>
-                        <label class="form" for="first_name">FIRST NAME<br></label>
+                        <label class="formL" for="first_name">FIRST NAME<br></label>
                         <input class="form" type="text" name="first_name" id="first_name">
                     </div>
                     <div>
-                        <label class="form" for="last_name">LAST NAME<br></label>
+                        <label class="formL" for="last_name">LAST NAME<br></label>
                         <input class="form" type="text" name="last_name" id="last_name">
                     </div>
                 </div>
 
                 <div id="forms" class="emailphone">
                     <div>
-                        <label class="form" for="user_email">EMAIL<br></label>
+                        <label class="formL" for="user_email">EMAIL<br></label>
                         <input class="form" type="email" name="email" id="email">
                     </div>
                     <div>
-                        <label class="form" for="phone">PHONE NUMBER<br></label>
+                        <label class="formL" for="phone">PHONE NUMBER<br></label>
                         <input class="form" type="tel" name="phone_number" id="phone_number">
                     </div>
                 </div>
 
                 <div id="forms" class="passwordconfirm">
                     <div>
-                        <label class="form" for="password">PASSWORD<br></label>
-                        <input class="form" type="password" name="password" id="password">
+                        <label  class="formL" for="password">PASSWORD<br></label>
+                        <input id="pwd" class="form" type="password" name="password" id="password">
+                        <div id="verinfo" class="pwdinfo">*Password does not match</div>
+                
                     </div>
                     <div>
-                        <label class="form" for="password">CONFIRM PASSWORD<br></label>
-                        <input class="form" type="password" name="password" id="password">
+                        <label  class="formL" for="password">CONFIRM PASSWORD<br></label>
+                        <input id="cpwd" class="form" type="password" name="password" id="password">
+                        <div class="pwdinfo"><br> </div>
+                        
                     </div>
                 </div>
             </form>
         </div>
         <div class="main--right--bottom">
-            <button>Create Account</button>
-            <div>Already have an account?<a href="file:///home/piter/repos/signup/index.html">log in</a></div>
+            <button class="button">Create Account</button>
+            <div class="main--right-bottom-text">Already have an account?<a href="file:///home/piter/repos/signup/index.html"> Log in</a></div>
 
         </div>
 
