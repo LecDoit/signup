@@ -12,9 +12,12 @@ btn.addEventListener('click',function(){
         verinfo.innerHTML="Password is correct ;)"
         pwd.style.borderColor = "#596d48"
         cpwd.style.borderColor = "#596d48"
+        verinfo.style.color = "#596d48"
     }else{
         verinfo.innerHTML="*Password does not match"
         pwd.style.borderColor = "#ff0000"
         cpwd.style.borderColor = "#ff0000"
+        verinfo.style.color = "#ff0000"
     }
 })
+
